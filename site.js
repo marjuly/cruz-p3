@@ -44,14 +44,8 @@ const vue_app = Vue.createApp({
             getMonthText(dateArray) {
               months = ["January", "February", "March", "April","May", "June", "July", "August", "September", "October", "November", "December"];
               switch(dateArray = ){
-                
+
               }
-            },
-            loadTest(sample) {
-              alert(sample)
-            },
-            beforeMount(){
-              this.loadTest(12)
             }
       }
 })
