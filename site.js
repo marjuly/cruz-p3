@@ -37,7 +37,7 @@ const vue_app = Vue.createApp({
             title: "IMDB + Marjuly's Top 8 Movies",
             owner: "Marjuly",
             github: "https://github.com/marjuly/cruz-p3",
-            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],    
+            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
       }
     },
       methods: {
@@ -50,40 +50,40 @@ const vue_app = Vue.createApp({
                       month = months[0]
                       break
                     case 2:
-                      month = "February"
+                      month = months[1]
                       break
                     case 3:
-                      month = "March"
+                      month = months[2]
                       break
                     case 4:
-                      month = "April"
+                      month = months[3]
                       break
                     case 5:
-                      month = "May"
+                      month = months[4]
                       break
                     case 6:
-                      month = "June"
+                      month = months[5]
                       break
                     case 7:
-                      month = "July"
+                      month = months[6]
                       break
                     case 8:
-                      month = "August"
+                      month = months[7]
                       break
                     case 9:
-                      month = "September"
+                      month = months[8]
                       break
                     case 10:
-                      month = "October"
+                      month = months[9]
                       break
                     case 11:
-                      month = "November"
+                      month = months[10]
                       break
                     case 12:
-                      month = "December"
+                      month = months[11]
                       break
                   }
-                  releaseDate = month + dateArray[2] + ", " + dateArray[0]
+                  releaseDate = month + " " + dateArray[2] + ", " + dateArray[0]
                   console.log(releaseDate)
                   return releaseDate
                 },
