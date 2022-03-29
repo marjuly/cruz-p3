@@ -85,6 +85,7 @@ const vue_app = Vue.createApp({
                       break
                   }
                   releaseDate = month + dateArray[2] + ", " + dateArray[0]
+                  console.log(releaseDate)
                   return releaseDate
                 },
                 posterClick(index){
