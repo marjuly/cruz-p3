@@ -37,15 +37,14 @@ const vue_app = Vue.createApp({
             title: "IMDB + Marjuly's Top 8 Movies",
             owner: "Marjuly",
             github: "https://github.com/marjuly/cruz-p3",
-            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-            releaseDate: "",
-            month: "",
+            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],    
       }
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
                 getMonthText(dateArray) {
-
+                  var releaseDate;
+                  var month;
                   switch(dateArray[1]){
                     case 1:
                       month = months[0]
