@@ -83,7 +83,7 @@ const vue_app = Vue.createApp({
                       month = months[11]
                       break
                   }
-                  releaseDate = month + " " + dateArray[2] + ", " + dateArray[0]
+                  releaseDate = month + "  " + dateArray[2] + ", " + dateArray[0]
                   console.log(releaseDate)
                   return releaseDate
                 },
