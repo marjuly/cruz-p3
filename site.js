@@ -85,11 +85,11 @@ const vue_app = Vue.createApp({
                   }
                   releaseDate = month + " " + dateArray[2] + ", " + dateArray[0]
                   console.log(releaseDate)
-                  document.GetElementByClass("released").innerHTML = releaseDate
+                  return releaseDate = this.movies[index].released
                 },
                 posterClick(index){
                   index++
-                  if (index >= movies[index].posters.length) {
+                  if (index >= this.movies[index].posters.length) {
                     index = 0
                   }
                 }
