@@ -37,8 +37,8 @@ const vue_app = Vue.createApp({
             title: "IMDB + Marjuly's Top 8 Movies",
             owner: "Marjuly",
             github: "https://github.com/marjuly/cruz-p3",
-            showRelease: true
-            releaseDate: "This is the date the movie was released";
+            showRelease: true,
+            releaseDate: "This is the date the movie was released"
       }
     },
       methods: {
