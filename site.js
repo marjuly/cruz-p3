@@ -44,7 +44,6 @@ const vue_app = Vue.createApp({
                 getMonthText(dateArray) {
                   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                   var month;
-                  var releaseDate;
                   switch(dateArray[1]){
                     case 1:
                       month = months[0]
@@ -83,14 +82,12 @@ const vue_app = Vue.createApp({
                       month = months[11]
                       break
                   }
-                  releaseDate = month + " " + dateArray[2] + ", " + dateArray[0]
-                  console.log(releaseDate)
-                  return releaseDate = this.movies[index].released
+                  return month + " " + dateArray[2] + ", " + dateArray[0]
                 },
                 posterClick(index){
                   index++
-                  if (index >= this.movies[index].posters.length) {
-                    index = 0
+                  if (this.index >= this.movies[index].posters.length) {
+                    index = 0;
                   }
                 }
 
